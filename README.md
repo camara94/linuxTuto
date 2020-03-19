@@ -70,7 +70,7 @@ pour **D**isk **U**sage
 
 * <code>du</code> cette commande affiche la taille occupée par un dossier 
 * **-h** ce paramètre permet d'afficher la taille **Human Readable** qui peut être en Octect, kilo Octect, Mega Octect...
-<<<<<<< HEAD
+
 * *-a** ce paramètre permet d'afficher la taille des dossiers et fichier
 
 
@@ -91,6 +91,6 @@ Dans cette partie du tuto, nous allons voir comment:
 <code>Espace</code> : affiche la suite du fichier. La toucheEspacefait défiler le fichier vers le bas d'un « écran » de console. C'est celle que j'utilise le plus souvent.
 
 <code>Entrée</code>: affiche la ligne suivante. Cela permet donc de faire défiler le fichier vers le bas ligne par ligne.
->>>>>>> 8529c24fcb83dca50fd889e2bfcdce6795ea8ed5
+
 
 
