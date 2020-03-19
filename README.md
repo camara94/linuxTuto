@@ -85,12 +85,45 @@ Dans cette partie du tuto, nous allons voir comment:
 * <code>cat</code> la commande **cat** permet d'afficher tout le contenu d'un fichier d'un coups
 * **-n** ce paramètre nous permet afficher les numéros de ligne du fichier
 **NB** cette commande n'est pas adaptée aux minipulations des gros fichiers
-** <code>less</code> permet d'afficher le contenu d'un fichier page par page dans console 
-=======
 
-<code>Espace</code> : affiche la suite du fichier. La toucheEspacefait défiler le fichier vers le bas d'un « écran » de console. C'est celle que j'utilise le plus souvent.
+* ** <code>less</code> permet d'afficher le contenu d'un fichier page par page dans console 
 
-<code>Entrée</code>: affiche la ligne suivante. Cela permet donc de faire défiler le fichier vers le bas ligne par ligne.
+* <code>Espace</code> : affiche la suite du fichier. La toucheEspacefait défiler le fichier vers le bas d'un « écran » de console. C'est celle que j'utilise le plus souvent.
 
+* <code>Entrée</code>: affiche la ligne suivante. Cela permet donc de faire défiler le fichier vers le bas ligne par ligne.
 
+* <code>head</code> cette commande permet d'afficher les 10 premières lignes d'un fichier par defaut
+* <code>tail</code> cette commande permet d'afficher les 10 dernières lignes d'un fichier par defaut
 
+* **-n nbre** retourne nbre premières ou dernières ligne d'un fichier selon **head** ou **tail**
+
+### 2 touch & mkdir: création d'un fichier et dossier
+
+* <code>touch</code> cette commande permet de créer un fichier
+* <code>mkdir</code> cette commande permet de créer un dossier
+* **-p** cette option permet à la commande **mkdir** de créer de dossier intermediaires
+  ex: mkdir dossier/sousdossier/lion
+
+### 3 cp & mv: copier et deplacer un fichier ou un dossier
+
+* <code>cd</code> cette commande permet de copier un fichier dans un dossier
+* <code>mv</code> cette commande permet de deplacer un fichier dans un dossier
+* **-R** avec la commande **cp** permet de copier un dossier avec son contenu dans un autre
+* <code>*</code> avec la commande **cp** permet de copier avec les extensions
+
+### 3 rm: supprimer des fichiers et dossiers
+
+* <code>rm</code> suivi du nom du fichier ou dossier à supprimer
+* **-i** pour demander la confirmation 
+* **-f** pour forcer la suppression
+* **-v** pour dire ce la commande est entrain  de faire
+* **-r** pour supprimer un dossier ses contenus
+* **NB** il faut jamais utiliser cette commande rm -rf /* pour dir supprimer avec force mon dossier racine et ses sous dossiers 
+
+## 5 ln: créer des liens entre fichiers
+Elle crée de types de liens:
+* liens **Symboliques**
+* liens **Physiques**
+
+* lien **physique** <code>ln fichier fichier2</code> fichier doit avoir exister
+* lien **symbolique** <code>ln -s fichier fichier</code> même remarque
