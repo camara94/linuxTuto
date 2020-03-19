@@ -92,3 +92,5 @@ Dans cette partie du tuto, nous allons voir comment:
 
 <code>Entrée</code>: affiche la ligne suivante. Cela permet donc de faire défiler le fichier vers le bas ligne par ligne.
 >>>>>>> 8529c24fcb83dca50fd889e2bfcdce6795ea8ed5
+
+
