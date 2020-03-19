@@ -70,3 +70,18 @@ pour **D**isk **U**sage
 
 * <code>du</code> cette commande affiche la taille occupée par un dossier 
 * **-h** ce paramètre permet d'afficher la taille **Human Readable** qui peut être en Octect, kilo Octect, Mega Octect...
+* *-a** ce paramètre permet d'afficher la taille des dossiers et fichier
+
+
+## Manipuler les fichiers en Linux
+Dans cette partie du tuto, nous allons voir comment:
+1. afficher le contenu d'un fichier
+2. deplacer un fichier
+3. copier un ficier
+4. supprimer un fichier
+
+### 1 cat & less: afficher le contenu d'un fichier 
+* <code>cat</code> la commande **cat** permet d'afficher tout le contenu d'un fichier d'un coups
+* **-n** ce paramètre nous permet afficher les numéros de ligne du fichier
+**NB** cette commande n'est pas adaptée aux minipulations des gros fichiers
+** <code>less</code> permet d'afficher le contenu d'un fichier page par page dans console 
