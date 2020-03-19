@@ -1,0 +1,153 @@
+    1  sudo apt-get update
+    2  cls
+    3  clear
+    4  sudo apt-get install gedit
+    5  clear
+    6  sudo apt-get update
+    7  sudo apt-get install gedit
+    8  gedit camara.txt
+    9  ls
+   10  clear
+   11  sudo apt-get upgrade
+   12  date %D
+   13  date %d
+   14  date -%d
+   15  date --%d
+   16  date --help
+   17  date --date=%d
+   18  date --date
+   19  date 
+   20  man date
+   21  date -d
+   22  date %d
+   23  date %D
+   24  %D
+   25  date  -%D
+   26  date  -d
+   27  date --d
+   28  date  --date
+   29  date  --date=d
+   30  date  --date=m
+   31  date  --date=%d
+   32  date  --date='%d%m%a'
+   33  date  --date=%d%m%a
+   34  date  --date=%d
+   35  date  --date=a
+   36  date  --date=h
+   37  clear
+   38  date
+   39  clear
+   40  ls
+   41  ls -l | wc -l
+   42  ls -l | grep txt | wc -l
+   43  clear
+   44  ls 
+   45  ls -a
+   46  ls --all
+   47  ls --all | wc -l
+   48  ls -a | wc -l
+   49  ls -A
+   50  ls -A | wc -l
+   51  ls Bureau
+   52  ls Bureau/
+   53  ls -a  Bureau/
+   54  ls Téléchargements/
+   55  ls Public/
+   56  ls -d
+   57  ls -D
+   58  clear
+   59  man head
+   60  head camara.txt
+   61  head camara.txt | wc -w
+   62  head camara.txt | grep mon
+   63  head camara.txt | grep *mon
+   64  head camara.txt | grep "mon"
+   65  head camara.txt | grep bon
+   66  head camara.txt | grep Bon
+   67  head camara.txt | grep Bon | wc -w
+   68  head camara.txt | grep Bon | wc 
+   69  head camara.txt | grep Bon | wc -c1
+   70  head camara.txt | grep Bon | wc c1
+   71  head camara.txt | grep Bon | wc -c 1
+   72  clear
+   73  date 
+   74  man env
+   75  env -c
+   76  clear
+   77  history ls
+   78  history 
+   79  history 
+   80  man env
+   81  ls --all | wc -l
+   82  sudo apt-get update
+   83  gedit camara.txt 
+   84  ls --all | wc -l
+   85  gedit camara.txt 
+   86  ls --all | wc -l
+   87  ls -a  Bureau/
+   88  gedit camara.txt 
+   89  ls
+   90  cd Bureau/
+   91  cd ..
+   92  pwd
+   93  cls
+   94  clear
+   95  date
+   96  date | day
+   97  man date
+   98  sudo apt-get update
+   99  sudo apt-get upgrade
+  100  ls -a
+  101  ls -lear
+  102  cls
+  103  sudo apt- get install dnsmasq -base 
+  104  sudo apt- get install dnsmasq-base 
+  105  sudo apt- get install dnsmasq
+  106  ifconfig
+  107  sudo apt install net-tools
+  108  ifconfig
+  109  sudo apt-get update
+  110  sudo apt-get upgrade
+  111  ifconfig
+  112  pwd
+  113  cd ..
+  114  ls
+  115  cd damaro/
+  116  ls
+  117  cd linuxTuto/
+  118  cls
+  119  git status
+  120  git add .
+  121  git status
+  122  cls
+  123  git commit -m "Résumé du chapitre I"
+  124  git config --global user.name "Camara Laby Damaro"
+  125  git config --global user.email "ldamaro@gmail.com"
+  126  cls
+  127  git commit -m "Résumé du chapitre I"
+  128  sudo apt-get install chrome
+  129  git log --oneline
+  130  git remote add origin https://github.com/camara94/linuxTuto.git
+  131  git push - origin master
+  132  cls
+  133  git push -u origin master
+  134  clear
+  135  date
+  136  cls
+  137  ls
+  138  cls
+  139  ls -l
+  140  clear
+  141  ls -a
+  142  ls --all
+  143  ls -al --all
+  144  man dash
+  145  teamviewer 
+  146  cls
+  147  teamviewer -h
+  148  cls
+  149  displaycls
+  150  history
+  151  history --head
+  152  history head
+  153  history>> historique.txt
