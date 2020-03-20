@@ -127,3 +127,52 @@ Elle crée de types de liens:
 
 * lien **physique** <code>ln fichier fichier2</code> fichier doit avoir exister
 * lien **symbolique** <code>ln -s fichier fichier</code> même remarque
+
+## Les droits d'accèss 
+**sudo** qui signifie **S**uper **U**ser **DO**
+* <code>sudo su</code> cette commande, nous permet de devenir **super utilisateur** du Système
+il se distingue par l'utilisateur normal **~** par **#** pour quitter <code>CTRL + D</code>
+
+### Gestion des utilisateurs
+
+1. ajouter un utilisateur
+*   <code>adduser</code> cette commande nous permet d'ajouter un utilisateur
+*   <code>passwd</code> cette commande nous permet de changer de mot de passe d'utilisateur
+2. suppression d'un utilissateur
+*   <code>deluser</code> cette commande nous permet de supprimer utilisateur
+*   <code>addgroup</code> cette commande nous permet d'ajouter group 
+*   <code>usermod</code> cette commande nous permet de modifier un user
+*   **-l** ce parametre de la commande **usermod** permet de renommer un user
+*   **-g** ce parametre de la commande **usermod** permet de de changer le d'un user
+*   **-G** ce parametre de la commande **usermod** permet de d'ajouter un user à plusieur group
+*   ex: usermod -g amis mawatta; usermod -G amis,mawatta mawatta
+*   <code>delgroup</code> cette commande nous permet de supprimer un group
+
+## Gestion des propriétaire d'un fichier
+* <code>chown user fichier</code> pour changer de proprietaire d'un fichier
+* <code>chgrp user fichier</code> pour changer de group proprietaire d'un fichier
+* <code>chow user:group fichier</code> pour changer proprietaire et groupe du fichier
+* **-R** modifier également pour les sous dossiers
+
+## chmod: modifie les droits d'accèss 
+* x->1 w->2 r->4 rwx->7
+* un fichier peut avoir trois droits propriétaire groupe et les autres
+* un propriétaire peut avoir le droit de lecture <code>r->4</code>, droit d'écriture <code>w->2</code> et droit d'execution <code>x->1</code> pour <code>rwx->7</code>
+* un groupe peut avoir le droit de lecture <code>r->4</code>, droit d'écriture <code>w->2</code> et droit d'execution <code>x->1</code> pour <code>rwx->7</code>
+* et les autres peuvent avoir le droit de lecture <code>r->4</code>, droit d'écriture <code>w->2</code> et droit d'execution <code>x->1</code> pour <code>rwx->7</code>
+* si le propriétaire, le groupe et les autre ont tous les droits ça donne ça <code>700 + 70 + 7 => 777</code> ou <code>rwrrwxrwx</code>
+* si le propriétaire n'a que le droit de lecture, le groupe et les autre ont tous les droits ça donne ça <code>400 + 70 + 7 => 477</code> ou <code>r--rwxrwx</code>
+
+* si le propriétaire n'a que le droit de lecture, le groupe n'a que le droit d'ecriture et les autre ont tous les droits ça donne ça <code>400 + 20 + 7 => 427</code> ou <code>r---w-rwx</code> etc...
+
+* ou encore propriétaire designé par u, groupe par g et les autre o
+* ajouter le droit d'ecriture au propriétaire par <code>chmod u+w fichier</code>
+* retirer le droit d'execution aux autres par <code>chmod o-x fichier</code>
+* ajouter le droit de lecture au group par <code>chmod g+r fichier</code>
+
+* + signifie ajouter un droit
+* - signifie retirer un droit
+* Exemple chmod u+w, g+r, o-x rapport.txt
+* Exemple chmod ugo+x rapport.txt c'est à dire ajouter le droit d'execution au propriétaire, groupe et les autres au fichier rapport.txt
+* Exemple chmod u=rwx,g=r,o=- rapport.txt: ajouter les droits au propriétaire, seulement de lecture au groupe et retirer tous les droits autres au fichier rapport.txt
+* **-R** le paramètre pour affectation recursive
