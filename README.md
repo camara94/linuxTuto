@@ -176,3 +176,27 @@ il se distingue par l'utilisateur normal **~** par **#** pour quitter <code>CTRL
 * Exemple chmod ugo+x rapport.txt c'est à dire ajouter le droit d'execution au propriétaire, groupe et les autres au fichier rapport.txt
 * Exemple chmod u=rwx,g=r,o=- rapport.txt: ajouter les droits au propriétaire, seulement de lecture au groupe et retirer tous les droits autres au fichier rapport.txt
 * **-R** le paramètre pour affectation recursive
+## Installation sous GNU/linux(Ubuntu)
+* Pour mettre à jour notre cache: <code>sudo apt-get update</code>
+* Pour installer un logiciel: <code>sudo apt-get install package</code>
+* Pour rechercher un package: <code>sudo apt-cache install package</code>
+* Pour afficher la description d'un package: <code>sudo apt-cache show package</code>
+* Pour supprimer un package: <code>sudo autoremove package</code>
+* Pour mettre à jour tous les packages: <code>sudo apt-get upgrade</code>
+* Sous Linux, toutes les commandes et leurs paramètres sont documentés dans le manuel. Il est recommandé de lire le manuel à 
+  chaque  fois que vous avez des questions sur une commande car la réponse s'y trouve la plupart du temps.
+* On fait appel au manuel avec la commande man suivie du nom de la commande sur laquelle on veut avoir plus d'informations. 
+  Par exemple : <code>man mkdir</code>.
+* Dans le manuel, on se déplace avec les touches fléchées ou **Page Up** et **Page Down**, on fait une recherche avec la touche / 
+  (**slash**) et on quitte avec la touche **Q**.
+* Le manuel d'une commande commence toujours par son **SYNOPSIS** : c'est un résumé des différentes manières d'utiliser la commande.
+  Les options facultatives sont écrites entre crochets.
+* Pour trouver une commande correspondant à un certain usage, utilisez apropos. Ainsi, apropos sound affichera toutes les commandes
+  ayant un rapport avec le son.<br/>
+  <code>
+  	<pre>
+  		man commande
+  		apropos commande
+  		whatis commande
+  	</pre>
+  </code>
